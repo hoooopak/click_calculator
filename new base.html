@@ -1,0 +1,380 @@
+<html id="likeyacutg">
+    <background>
+    <p id="demo"></p>
+<title> Home </title>
+<script type="text/javascript">
+var clicks = 1
+var upgrade = 1;
+var die = document.getElementById("die");
+var notunlocked = document.getElementById("notunlocked");
+var commune = 1
+var treeprice = 100;
+var communeprice = 250;
+var trees = 0;
+var clickbuyprice = 50;
+var shon = 1;
+var scorevalue = 1;
+var score = 0;
+function heu(){
+score = score + scorevalue;
+document.getElementById("urpoo").innerHTML = score;
+}
+function buy() {
+if(score>=clickbuyprice){
+    score = score - clickbuyprice;
+clicks = clicks + 1
+scorevalue = scorevalue + 1
+    document.getElementById("urpoo").innerHTML = score;
+    document.getElementById("ueu").innerHTML = clicks + "clicks";
+}
+}
+function buybulk(){
+    if(score>=treeprice){
+        trees = trees + 1;
+        score = score - treeprice;
+     clickbuyprice = clickbuyprice/2;
+     document.getElementById("urpoo").innerHTML = score;
+     document.getElementById("price").innerHTML = "Buy +1 Clicks price =" + clickbuyprice; 
+     document.getElementById("ue").innerHTML = trees + "trees";
+    }
+}
+function buycommune() {
+    if(score>=communeprice){
+        commune = commune + 1;
+        score = score - communeprice;
+   scorevalue = scorevalue + 2;
+        document.getElementById("eu").innerHTML = commune + "commune";
+        document.getElementById("urpoo").innerHTML = score;
+        
+    }
+}
+function buycharacter() {
+    if(score>=700){
+        upgrade = upgrade + 1;
+        score = score - 700;
+scorevalue = scorevalue * 2;
+        document.getElementById("eep").innerHTML =  upgrade - 1 + "upgrades";
+        document.getElementById("urpoo").innerHTML = score;
+        document.getElementById("reekid").style.visibility = 'hidden';
+       
+
+
+
+    }
+}
+function buycharacter2() {
+    if(score>=2000){
+        upgrade = upgrade + 1;
+        score = score - 2000;
+scorevalue = scorevalue * 3;
+        document.getElementById("eep").innerHTML =  upgrade - 1 + "upgrades";
+        document.getElementById("urpoo").innerHTML = score;
+        document.getElementById("deo").style.visibility = 'hidden';
+      
+
+
+    }
+}
+function buycharacter3() {
+    if(score>=2500){
+        upgrade = upgrade + 1;
+        score = score - 2500;
+clickbuyprice = clickbuyprice/2;
+communeprice = communeprice/2;
+treeprice = treeprice/2;
+        document.getElementById("eep").innerHTML =  upgrade - 1 + "upgrades";
+        document.getElementById("urpoo").innerHTML = score;
+        document.getElementById("WO").style.visibility = 'hidden';
+        document.getElementById("price").innerHTML = "Buy +1 Clicks price =" + clickbuyprice;
+        document.getElementById("SUPERYEET").innerHTML = "Buy  click commune price ="  +communeprice+ "(+2 clicks)"
+       document.getElementById("yeetman").innerHTML = "Buy  click tree price =" +treeprice+ "(/2 price of clicks)"
+
+
+
+    }
+}
+
+
+
+
+
+
+
+
+  var today = new Date();
+
+var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+
+var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+
+var dateTime = date+' '+time;
+document.getElementById("demo").innerHTML = dateTime;
+
+
+
+  
+
+</script>
+ <style>
+    
+
+     .kss {
+         text-align: right;
+         border: 3px solid black;
+         
+     }
+     button {
+         font-size: 15px;
+     }
+     fieldset {
+         border: 5px outset lightgrey;
+     }
+     legend {
+         font-size: 30px;
+     }
+     rainbow {
+        border: 10px groove aliceblue;
+    size: 4px;
+    text-align: center;
+    padding-top: 0px;
+    padding-right: 400px;
+   
+
+    color: #ffff;
+    background: -webkit-linear-gradient(70deg, #f3d250 30%, rgba(0, 0, 0, 0) 30%), -webkit-linear-gradient(30deg, orange 60%, #f78888 60%);
+    background: -o-linear-gradient(70deg, #f3d250 30%, rgba(0, 0, 0, 0) 30%), -o-linear-gradient(30deg, orange 60%, #f78888 60%);
+    background: -moz-linear-gradient(70deg, #f3d250 30%, rgba(0, 0, 0, 0) 30%), -moz-linear-gradient(30deg, orange 60%, #f78888 60%);
+    background: linear-gradient(70deg, #f3d250 30%, rgba(0, 0, 0, 0) 30%), linear-gradient(30deg, orange 60%, #f78888 60%);
+    font-family: "Comic Sans MS";
+
+         font-size: 60px;
+         color:red;
+      animation: rainbowtext 4s ease-in-out infinite ;
+         transition: 0.4s all;
+         
+        
+  
+     }
+     @keyframes rainbowtext {
+         0% {color: red;}
+         10% {color: orangered}
+         20% {color: yellow}
+         30% {color: yellowgreen}
+         40% {color: greenyellow}
+         50% {color: blue}
+         60% {color: blueviolet}
+         70% {color: darkviolet}
+         80% {color: rebeccapurple}
+         90% {color: purple}
+         100% {color: red}
+     }
+    </style>
+    <style>
+    
+        
+
+        body.dark {
+	background: #292C35;
+    color:whitesmoke;
+        }
+
+     html {
+         background-color: white;
+     }
+        
+             
+      
+        
+        address {
+            font-size: 30px
+        }
+        .ii {
+           font-size: 15;
+        }
+        h3 {
+            text-align: right;
+        }
+        input {
+            text-align: left;
+        }
+    </style>
+    <style>
+        rainbow:hover {
+            animation: glow 1s ease-in-out infinite alternate;
+            color:whitesmoke;
+
+        }
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  font-size: 40px ;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  font-size: 60px;
+  }
+}
+        .poo {
+            font-size:20px;
+        }
+ 
+body {
+	background-color: #fafafa;
+	transition: all 0.2s linear;
+}
+
+body.dark {
+	background: #292C35;
+}
+
+input[type=checkbox]{
+	height: 0;
+	width: 0;
+	visibility: hidden;
+}
+.pooe {
+    
+    font-size: 40px;
+    
+}
+.yeet {
+    float: right;
+    font-size: 20px;
+}
+
+label {
+	cursor: pointer;
+	text-indent: -9999px;
+	width: 100px;
+	height: 50px;
+	background: grey;
+	display: block;
+	border-radius: 100px;
+	position: relative;
+}
+
+label:after {
+	content: '';
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	width: 35px;
+	height: 40px;
+	background: #fff;
+	border-radius: 90px;
+	transition: 0.3s;
+}
+
+input:checked + label {
+	background: #bada55;
+}
+
+input:checked + label:after {
+	left: calc(100% - 5px);
+	transform: translateX(-100%);
+}
+
+label:active:after {
+	width: 50px;
+}
+.yesss{
+    font-size: 30px;
+}
+
+    </style>
+   
+    <rainbow> Home</rainbow>
+    <br>
+    <br>
+    <fieldset class="ieee">
+    <legend> Links</legend> 
+    
+</fieldset>
+<br>
+<fieldset class="ieee">
+    <legend>Low Quality Calculator</legend>
+<button onclick="zzz()" class="ii"> addition calculator</button>
+<button onclick="ooo()" class="ii"> subtraction calculator</button>
+<button onclick="iii()" class="ii">multiplication calculator</button>
+<button onclick="lll()" class="ii">division calculator</button>
+<br>
+</fieldset>
+<h2> light/dark mode</h2>
+	<input type="checkbox" class="checkbox" id="switch" />
+	<label for="switch">Toggle</label>
+    <br>
+    <fieldset>
+        <legend>Phoney Clicker Game</legend>
+<h3 id="eep"></h3>
+<h3 id="ueu"></h3><h3 id="ue"></h3><h3 id="eu"></h3>
+<button id="price" class="yeet" onclick="buy()">Buy +1 click(50)</button>
+<button id="yeetman" class="yeet" onclick="buybulk()">Buy  click tree (100) /2 price of clicks </button>
+<br>
+<br>
+<button id="SUPERYEET" class="yeet" onclick="buycommune()">Buy  click commune (250)+2 clicks</button>
+<br>
+<button class="yesss"onclick="heu(1)">Clicker</button>
+<br>
+<h2 id="urpoo" class="pooe">0</h2>
+<h1>Upgrades</h1>
+
+<button id="reekid" class="die" onclick="buycharacter()">Buy Clicker Upgrade (700) x2 all</button>
+<button id="deo" class="die" onclick="buycharacter2()">Buy Clicker Upgrade (2000) x3 all</button>
+<button id="WO" class="die" onclick="buycharacter3()">Buy Price Upgrade (2500) /2 all prices</button>
+</fieldset>
+
+
+
+
+    
+    
+  
+
+
+<script>
+    var b;
+    var l;
+    var a;
+    var c;
+var x;
+var y;
+function zzz(){
+    let x = prompt('enter value');
+    let y = prompt('enter next value');
+    window.alert( Number(x) + Number(y));
+}
+
+function iii(){
+let a = prompt('enter value');
+let c = prompt('enter next value');
+window.alert( Number(a) * Number(c));
+}
+function ooo(){
+let b = prompt('enter value');
+let l = prompt('enter next value');
+window.alert( Number(b) - Number(l) );
+}
+function lll(){
+    let p = prompt('enter value');
+    let q = prompt('enter next value');
+    window.alert( Number(p)/Number(q));
+}
+const chk = document.getElementById('switch');
+
+chk.addEventListener('change', () => {
+	document.body.classList.toggle('dark');
+    
+});
+    
+
+    
+
+    
+</script>
+
+
+ 
+</background>
+</html> 
